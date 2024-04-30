@@ -54,5 +54,4 @@ func TestGetAPIKey(t *testing.T) {
 			assert.Equal(t, tc.expected, got)
 		})
 	}
-
 }
