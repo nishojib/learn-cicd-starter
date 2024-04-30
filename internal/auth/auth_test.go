@@ -45,7 +45,7 @@ func TestGetAPIKey(t *testing.T) {
 			got, err := auth.GetAPIKey(headers)
 
 			if err != nil {
-				require.NoError(t, err)
+				require.Error(t, err)
 				require.ErrorIs(t, err, tc.expectedErr)
 				return
 			}
